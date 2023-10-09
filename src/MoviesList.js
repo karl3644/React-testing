@@ -5,7 +5,7 @@ import Movie from './Movie';
 
 class MoviesList extends PureComponent {
   state = {
-    movies: [],
+    movies: [1, 2],
   };
 
   async componentDidMount() {
