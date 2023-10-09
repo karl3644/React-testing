@@ -16,6 +16,8 @@ test("<MovieForm />", () => {
     // getByLabelText("Text").value = "hi";
     // fireEvent.change(getByLabelText("Text"));
 
+    // More readable
+    // Updates the state before submitting the form
     fireEvent.change(getByLabelText("Text"), {
         target: { value: "new" }
     });
