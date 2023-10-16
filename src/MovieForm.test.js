@@ -8,7 +8,9 @@ afterEach(cleanup);
 const onSubmit = jest.fn(() => console.log("onSubmit was called"));
 
 test("<MovieForm />", () => {
-    const { queryByTestId, getByText, getByLabelText } = render(<MovieForm submitForm={onSubmit} />);
+    const { queryByTestId, getByText, getByLabelText } = render(
+        <MovieForm submitForm={onSubmit} />,
+    );
     // Loose find (queryByTestId)
     expect(queryByTestId("movie-form")).toBeTruthy();
 
@@ -19,14 +21,14 @@ test("<MovieForm />", () => {
     // More readable
     // Updates the state before submitting the form
     fireEvent.change(getByLabelText("Text"), {
-        target: { value: "new" }
+        target: { value: "new" },
     });
 
     fireEvent.click(getByText("Submit"));
     expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({
-        text: "new"
+        text: "new",
     });
 
     // debug();
-})
+});

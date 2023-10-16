@@ -6,7 +6,9 @@ import NewMovie from "./NewMovie.js";
 afterEach(cleanup);
 
 test("<NewMovie />", () => {
-    const { debug, getByTestId, queryByTestId, container, getByText } = render(<NewMovie />);
+    const { debug, getByTestId, queryByTestId, container, getByText } = render(
+        <NewMovie />,
+    );
     // Strict find - (getByTestId)
     expect(getByTestId("page-title").textContent).toBe("New movie");
     // Loose find - (queryByTestId)
@@ -15,4 +17,4 @@ test("<NewMovie />", () => {
     expect(container.firstChild).toMatchSnapshot();
 
     // debug();
-})
+});

@@ -2008,6 +2008,13 @@
     "safe-buffer" "^5.0.1"
     "sha.js" "^2.4.8"
 
+"cross-fetch@^3.0.4":
+  "integrity" "sha512-cvA+JwZoU0Xq+h6WkMvAUqPEYy92Obet6UdKLfW60qn99ftItKjB5T+BkyWOFWe2pUyfQ+IJHmpOTznqk1M6Kg=="
+  "resolved" "https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.1.8.tgz"
+  "version" "3.1.8"
+  dependencies:
+    "node-fetch" "^2.6.12"
+
 "cross-spawn@^5.0.1":
   "integrity" "sha512-pTgQJ5KC0d2hcY8eyL1IzlBPYjTkyH72XRZPnLyKus2mBfNjQs3klqbJU2VILqZryAZUt9JOb3h/mWMy23/f5A=="
   "resolved" "https://registry.npmjs.org/cross-spawn/-/cross-spawn-5.1.0.tgz"
@@ -2616,7 +2623,7 @@
   "resolved" "https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz"
   "version" "1.0.2"
 
-"encoding@^0.1.11":
+"encoding@^0.1.0", "encoding@^0.1.11":
   "integrity" "sha512-bl1LAgiQc4ZWr++pNYUdRe/alecaHFeHxIJ/pNciqGdKXghaTCOwKkbKp6ye7pKZGu/GcaSXFk8PBVhgs+dJdA=="
   "resolved" "https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz"
   "version" "0.1.12"
@@ -4706,6 +4713,14 @@
     "jest-mock" "^20.0.3"
     "jest-util" "^20.0.3"
 
+"jest-fetch-mock@^3.0.3":
+  "integrity" "sha512-Ux1nWprtLrdrH4XwE7O7InRY6psIi3GOsqNESJgMJ+M5cv4A8Lh7SN9d2V2kKRZ8ebAfcd1LNyZguAOb6JiDqw=="
+  "resolved" "https://registry.npmjs.org/jest-fetch-mock/-/jest-fetch-mock-3.0.3.tgz"
+  "version" "3.0.3"
+  dependencies:
+    "cross-fetch" "^3.0.4"
+    "promise-polyfill" "^8.1.3"
+
 "jest-haste-map@^20.0.4":
   "integrity" "sha512-0IKAQjUvuZjMCNi/0VNQQF74/H9KB67hsHJqGiwTWQC6XO5Azs7kLWm+6Q/dwuhvDUvABDOBMFK2/FwZ3sZ07Q=="
   "resolved" "https://registry.npmjs.org/jest-haste-map/-/jest-haste-map-20.0.5.tgz"
@@ -5565,6 +5580,13 @@
   dependencies:
     "encoding" "^0.1.11"
     "is-stream" "^1.0.1"
+
+"node-fetch@^2.6.12":
+  "integrity" "sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A=="
+  "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz"
+  "version" "2.7.0"
+  dependencies:
+    "whatwg-url" "^5.0.0"
 
 "node-forge@0.7.5":
   "integrity" "sha512-MmbQJ2MTESTjt3Gi/3yG1wGpIMhUfcIypUCGtTizFR9IiccFwxSpfp0vtIZlkFclEqERemxfnSdZEMR9VqqEFQ=="
@@ -6548,6 +6570,11 @@
   "integrity" "sha512-TRNLrLfTyjKMs865PwLv6WM5TTMRvzqcZTkKaMVd0ooNM0fnMM8aEp0/7IpnGo295TAiI13Ju30zBZK0rdWZUg=="
   "resolved" "https://registry.npmjs.org/progress/-/progress-2.0.0.tgz"
   "version" "2.0.0"
+
+"promise-polyfill@^8.1.3":
+  "integrity" "sha512-H5oELycFml5yto/atYqmjyigJoAo3+OXwolYiH7OfQuYlAqhxNvTfiNMbV9hsC6Yp83yE5r2KTVmtrG6R9i6Pg=="
+  "resolved" "https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-8.3.0.tgz"
+  "version" "8.3.0"
 
 "promise@^7.1.1":
   "integrity" "sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg=="
@@ -8622,6 +8649,14 @@
   "integrity" "sha512-nUvUPuenPFtPfy/X+dAYh/TfRbTBlnXTM5iIfLseJFkkQewmpG9pGR6i87E9qL+lZaJzv+99kkQWoGOtLfkZQQ=="
   "resolved" "https://registry.npmjs.org/whatwg-url/-/whatwg-url-4.8.0.tgz"
   "version" "4.8.0"
+  dependencies:
+    "tr46" "~0.0.3"
+    "webidl-conversions" "^3.0.0"
+
+"whatwg-url@^5.0.0":
+  "integrity" "sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw=="
+  "resolved" "https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz"
+  "version" "5.0.0"
   dependencies:
     "tr46" "~0.0.3"
     "webidl-conversions" "^3.0.0"
