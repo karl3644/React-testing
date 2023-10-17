@@ -5,7 +5,7 @@ import {
     waitForElement,
     getByTestId,
 } from "react-testing-library";
-import MovieDetail from "./MovieDetail.js";
+import MovieDetail from "../MovieDetail.js";
 
 global.fetch = require("jest-fetch-mock");
 

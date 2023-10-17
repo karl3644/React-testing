@@ -1,6 +1,6 @@
 import React from "react";
 import { render, cleanup } from "react-testing-library";
-import Movie, { POSTER_PATH } from "./Movie.js";
+import Movie, { POSTER_PATH } from "../Movie.js";
 import { MemoryRouter } from "react-router-dom";
 
 // Clears dom after each test - otherwise tests can duplicate outputs and fail

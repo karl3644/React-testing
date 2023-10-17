@@ -1,6 +1,6 @@
 import React from "react";
 import { render, cleanup, fireEvent } from "react-testing-library";
-import MovieForm from "./MovieForm.js";
+import MovieForm from "../MovieForm.js";
 
 // Clears dom after each test - otherwise tests can duplicate outputs and fail
 afterEach(cleanup);
