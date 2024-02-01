@@ -1,4 +1,0 @@
-# Type: <type>
-# Subject: <subject>
-# Body: <body>
-# Ticket: <ticket>

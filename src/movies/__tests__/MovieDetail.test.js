@@ -34,5 +34,4 @@ test("<MovieDetail />", async () => {
     const { getByTestId } = render(<MovieDetail match={match} />);
     await waitForElement(() => getByTestId("movie-title"));
     expect(getByTestId("movie-title").textContent).toBe(movie.title);
-    // comment
 });
